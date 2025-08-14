@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Лендинг — Современный шаблон</title>
+	<meta name="description" content="Быстрый современный лендинг: адаптивный, доступный, SEO‑готовый." />
+	<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+	<header class="site-header">
+		<div class="container header-inner">
+			<a class="logo" href="#" aria-label="На главную">
+				<img src="/assets/logo.svg" alt="Logo" width="32" height="32" />
+				<span>Brand</span>
+			</a>
+			<nav class="nav" aria-label="Главная навигация">
+				<button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+					<span class="sr-only">Открыть меню</span>
+					<span class="bar"></span><span class="bar"></span><span class="bar"></span>
+				</button>
+				<ul id="primary-nav" class="nav-list">
+					<li><a href="#features">Преимущества</a></li>
+					<li><a href="#pricing">Цены</a></li>
+					<li><a href="#faq">FAQ</a></li>
+					<li><a href="#cta" class="btn btn--sm">Начать</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section class="hero">
+			<div class="container grid-2">
+				<div class="hero-copy">
+					<h1>Создайте эффектный лендинг быстрее</h1>
+					<p>Готовый каркас с лучшими практиками: адаптивная сетка, тёмная тема, доступность и быстрые загрузки.</p>
+					<form class="signup" action="#" method="post" novalidate>
+						<label class="sr-only" for="email">Email</label>
+						<input id="email" name="email" type="email" placeholder="Введите email" required />
+						<button type="submit" class="btn">Получить доступ</button>
+						<p class="form-msg" role="status" aria-live="polite"></p>
+					</form>
+					<ul class="checks">
+						<li>Без зависимостей</li>
+						<li>SEO‑готово</li>
+						<li>Легко кастомизировать</li>
+					</ul>
+				</div>
+				<div class="hero-art" aria-hidden="true">
+					<div class="blob"></div>
+				</div>
+			</div>
+		</section>
+
+		<section id="features" class="section">
+			<div class="container">
+				<h2>Преимущества</h2>
+				<div class="features">
+					<article>
+						<h3>Адаптивный дизайн</h3>
+						<p>Сетка и типографика автоматически подстраиваются под устройство.</p>
+					</article>
+					<article>
+						<h3>Производительность</h3>
+						<p>Минимум кода, разумные шрифты, кэширование и ленивые загрузки.</p>
+					</article>
+					<article>
+						<h3>Доступность</h3>
+						<p>ARIA‑атрибуты, контраст и управление с клавиатуры из коробки.</p>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section id="pricing" class="section alt">
+			<div class="container">
+				<h2>Цены</h2>
+				<div class="pricing">
+					<article class="card">
+						<h3>Старт</h3>
+						<p class="price">₽0</p>
+						<ul>
+							<li>Базовый шаблон</li>
+							<li>Обновления</li>
+							<li>Сообщество</li>
+						</ul>
+						<a href="#cta" class="btn btn--outline">Выбрать</a>
+					</article>
+					<article class="card featured">
+						<h3>Про</h3>
+						<p class="price">₽1 990</p>
+						<ul>
+							<li>Готовые секции</li>
+							<li>Компоненты</li>
+							<li>Поддержка</li>
+						</ul>
+						<a href="#cta" class="btn">Выбрать</a>
+					</article>
+					<article class="card">
+						<h3>Бизнес</h3>
+						<p class="price">По запросу</p>
+						<ul>
+							<li>Кастомный дизайн</li>
+							<li>Интеграции</li>
+							<li>SLA</li>
+						</ul>
+						<a href="#cta" class="btn btn--outline">Связаться</a>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section id="faq" class="section">
+			<div class="container">
+				<h2>FAQ</h2>
+				<details>
+					<summary>Можно ли использовать в коммерческих проектах?</summary>
+					<p>Да, этот шаблон свободен для использования и модификации.</p>
+				</details>
+				<details>
+					<summary>Как изменить цвета и шрифты?</summary>
+					<p>Все находится в CSS‑переменных в файле styles.css.</p>
+				</details>
+				<details>
+					<summary>Нужен ли сборщик?</summary>
+					<p>Нет, достаточно статических файлов. При желании можно подключить любой сборщик.</p>
+				</details>
+			</div>
+		</section>
+
+		<section id="cta" class="section cta">
+			<div class="container">
+				<h2>Готовы начать?</h2>
+				<p>Скопируйте шаблон и адаптируйте под ваш бренд.</p>
+				<a class="btn btn--lg" href="#">Создать проект</a>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container footer-inner">
+			<p>© <span id="year"></span> Brand. Все права защищены.</p>
+			<ul class="footer-links">
+				<li><a href="#">Политика</a></li>
+				<li><a href="#">Условия</a></li>
+			</ul>
+		</div>
+	</footer>
+
+	<script src="/script.js" defer></script>
+</body>
+</html>
