@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Brand logo">
+	<defs>
+		<linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+			<stop offset="0" stop-color="#60a5fa"/>
+			<stop offset="1" stop-color="#a78bfa"/>
+		</linearGradient>
+	</defs>
+	<rect x="4" y="4" width="56" height="56" rx="14" fill="url(#g)"/>
+	<path fill="#fff" d="M22 20h17c6 0 10 3.8 10 9.2 0 4.3-2.6 7.4-6.7 8.6l7.7 10.2h-8l-7.1-9.6h-6.6V48H22V20zm17.1 13.2c2.9 0 4.9-1.5 4.9-3.9 0-2.5-2-4-4.9-4H29.3v7.9h9.8z"/>
+</svg>
